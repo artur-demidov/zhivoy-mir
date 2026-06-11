@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /doc_
+
+Sitemap: https://xn----ctblicewnw.xn--p1ai/sitemap.xml
