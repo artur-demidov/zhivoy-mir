@@ -7,6 +7,7 @@ rsync -a \
   --exclude '.git' \
   --exclude '.github' \
   --exclude '.editorconfig' \
+  --exclude '.gitignore' \
   --exclude '.prettierrc' \
   --exclude 'internals' \
   --exclude 'README.md' \
