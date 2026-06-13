@@ -202,28 +202,6 @@ button {
   overflow-x: hidden;
 }
 
-.hero-notification__wrapper {
-  width: fit-content;
-  margin: 24px auto 16px;
-  position: relative;
-}
-
-.hero-notification__flag {
-  position: absolute;
-  inset-block-start: -50px;
-  inset-inline-start: -80px;
-}
-
-.hero-notification {
-  isolation: isolate;
-  background: var(--color-background);
-  border: 1px solid var(--color-orange-600);
-  border-radius: var(--radius-md);
-  corner-shape: squircle;
-  padding: 10px 16px;
-  text-align: center;
-}
-
 .hero__grid {
   display: grid;
   grid-template-columns: 1fr;
