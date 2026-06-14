@@ -31,17 +31,15 @@
 
 :root {
   --color-background: #fff;
+  --color-orange: #e77215;
   --color-link: oklch(42.4% 0.199 265.638);
   --color-title: oklch(13% 0.028 261.692);
   --color-text: oklch(37.3% 0.034 259.733);
   --color-border: oklch(92.8% 0.006 264.531);
-  --color-yellow-50: oklch(98.7% 0.026 102.212);
-  --color-blue-50: oklch(97% 0.014 254.604);
+  --color-orange-50: oklch(98% 0.016 73.684);
+  --color-red-50: oklch(97.1% 0.013 17.38);
   --color-blue-100: oklch(93.2% 0.032 255.585);
   --color-blue-400: oklch(70.7% 0.165 254.624);
-  --color-orange-600: oklch(64.6% 0.222 41.116);
-  --color-red-50: oklch(97.1% 0.013 17.38);
-  --color-emerald-50: oklch(97.9% 0.021 166.113);
   --radius-md: 8px;
   --radius-lg: 12px;
   @supports (corner-shape: squircle) {
@@ -131,9 +129,9 @@ button {
 
 .section__title {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
-  color: var(--color-orange-600);
+  color: var(--color-orange);
   margin-block-end: 24px;
 }
 
@@ -179,7 +177,7 @@ button {
   border-block-end: 2px solid transparent;
   transition: border-color 0.2s ease-in-out;
   &:hover {
-    border-color: var(--color-orange-600);
+    border-color: var(--color-orange);
   }
 }
 
@@ -198,7 +196,7 @@ button {
 
 .hero {
   padding-block: 30px 50px;
-  background-color: var(--color-yellow-50);
+  background-color: var(--color-orange-50);
   overflow-x: hidden;
 }
 
@@ -211,9 +209,6 @@ button {
 .hero__title {
   aspect-ratio: 14 / 3;
   margin: 0 auto 16px;
-  &.hero__title--spring {
-    aspect-ratio: 4 / 1;
-  }
 }
 
 .hero__subtitle {
@@ -267,7 +262,7 @@ button {
 
 .services {
   padding-block: 50px;
-  background: var(--color-blue-50);
+  background: var(--color-red-50);
 }
 
 .services__list {
@@ -319,19 +314,9 @@ button {
   rotate: 10deg;
 }
 
-.services-list__icon--butterfly {
-  position: absolute;
-  pointer-events: none;
-  inset-inline-start: -30px;
-  inset-block-start: -55px;
-}
-
 .employees {
   padding-block: 50px;
-  background:
-    url('/assets/images/spring_butterfly_2.svg') no-repeat top 10px left
-      calc(50% + 140px) / 55px 60px,
-    var(--color-red-50);
+  background-color: var(--color-orange-50);
 }
 
 .employees__grid {
@@ -374,7 +359,7 @@ button {
 
 .shop {
   padding-block: 50px;
-  background-color: var(--color-yellow-50);
+  background-color: var(--color-red-50);
 }
 
 .goods__grid {
@@ -454,7 +439,7 @@ button {
 
 .contacts {
   padding-block: 50px;
-  background: var(--color-emerald-50);
+  background: var(--color-orange-50);
 }
 
 .contacts__grid {
@@ -532,12 +517,6 @@ button {
   &:hover {
     background-color: color-mix(in srgb, var(--color-blue-100), #000 5%);
   }
-}
-
-#snowfall {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
 }
 
 @media (width >= 640px) {
